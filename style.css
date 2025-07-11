@@ -1,0 +1,60 @@
+/* Custom styles for smooth scrolling and dark/light mode */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark {
+    background-color: #1a202c; /* Dark background */
+    color: #e2e8f0; /* Light text */
+}
+.dark .bg-white {
+    background-color: #2d3748; /* Darker card background */
+}
+.dark .text-gray-700 {
+    color: #cbd5e0; /* Lighter gray text */
+}
+.dark .text-blue-600 {
+    color: #63b3ed; /* Lighter blue for links */
+}
+.dark .border-gray-200 {
+    border-color: #4a5568; /* Darker border */
+}
+.dark input, .dark textarea {
+    background-color: #4a5568;
+    color: #e2e8f0;
+    border-color: #6b7280;
+}
+.dark button {
+    background-color: #4299e1; /* Consistent button color */
+}
+.dark button:hover {
+    background-color: #3182ce;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-track {
+    background: #2d3748;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: #a0aec0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e0;
+}
